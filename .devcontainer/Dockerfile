@@ -29,11 +29,12 @@ RUN echo '#!/bin/bash' > /app/startup.sh && \
     echo 'echo "   • Config File: /etc/config.json"' >> /app/startup.sh && \
     echo 'echo ""' >> /app/startup.sh && \
     echo 'echo "🔗 VLESS Connection Details:"' >> /app/startup.sh && \
-    echo 'echo "   • Link: vless://55aa5585-3894-4da4-8e70-70a6713bdfb3.130.50.12:443"' >> /app/startup.sh && \
+    echo 'echo "   • Link: vless://55aa5585-3894-4da4-8e70-70a6713bdfb3@94.130.50.12:443"' >> /app/startup.sh && \
     echo 'echo "   • Encryption: none"' >> /app/startup.sh && \
     echo 'echo "   • Security: tls"' >> /app/startup.sh && \
     echo 'echo "   • Type: xhttp"' >> /app/startup.sh && \
     echo 'echo "   • Mode: packet-up"' >> /app/startup.sh && \
+    echo 'echo "   • Path: /ghtunghtun"' >> /app/startup.sh && \    
     echo 'echo "   • SNI: ${CODESPACE_NAME}-443.app.github.dev"' >> /app/startup.sh && \
     echo 'echo ""' >> /app/startup.sh && \
     echo 'echo "✨ Service is running and ready to accept connections..."' >> /app/startup.sh && \
